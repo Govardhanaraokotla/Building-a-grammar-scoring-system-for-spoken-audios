@@ -1,10 +1,6 @@
-
----
-
-```markdown
 # 🧠 Grammar Score Predictor for Spoken Audio
 
-A Machine Learning project to **predict grammar scores** from spoken audio using deep learning and natural language processing. This project involves preprocessing audio files, extracting features, training a regression model, and visualizing prediction performance.
+A Machine Learning project to **predict grammar scores** from spoken English audio using deep learning and natural language processing. The system processes audio files, extracts relevant features, trains a regression model, and evaluates its performance with visualizations.
 
 ---
 
@@ -14,109 +10,44 @@ A Machine Learning project to **predict grammar scores** from spoken audio using
   <img src="validation_scatter.png" alt="Validation Prediction vs Actual" width="400"/>
 </p>
 
-**Insight**: As seen above, the model predicts grammar scores fairly consistently across various true values — indicating a bias in output (potential improvement point!).
+📌 **Observation**: The current model predicts grammar scores within a narrow range regardless of true score values. This highlights a potential bias that can be improved in future iterations.
 
 ---
 
-## 📁 Project Overview
+## 🚀 Project Features
 
-- 🎧 **Audio Preprocessing**: Feature extraction from `.wav` files using `librosa` and `torchaudio`.
-- 🔍 **Feature Engineering**: Use of spectral features and embeddings for model training.
-- 🧠 **Model Training**: Regression model built with `PyTorch` to predict grammar scores.
-- 📈 **Evaluation**: Scatter plots and scoring metrics for validation.
-- 📦 **Submission**: CSV output aligned with competition-style format.
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/grammar-score-predictor.git
-cd grammar-score-predictor
-```
-
-### 2. Install Dependencies
-Make sure you have Python 3.7+ installed. Then run:
-```bash
-pip install -r requirements.txt
-```
-
-📦 Dependencies include:
-```
-numpy, pandas, matplotlib, scikit-learn, librosa, seaborn, torch, torchaudio, transformers, scipy, tqdm, jupyter
-```
+- 🎧 Audio Preprocessing using `librosa` and `torchaudio`
+- 🧠 Feature Engineering with spectral and statistical descriptors
+- 🔬 Regression Model using PyTorch
+- 📉 Evaluation with validation plots and metrics
+- 📦 Submission file generation in competition format
 
 ---
 
-## 🔧 Directory Structure
+## 🛠️ Tech Stack
+
+| Tool           | Purpose                      |
+|----------------|-------------------------------|
+| Python         | Core programming language     |
+| NumPy / Pandas | Data manipulation             |
+| Librosa        | Audio feature extraction      |
+| Torch / torchaudio | Deep learning + audio tools |
+| Matplotlib / Seaborn | Visualization           |
+| Scikit-learn   | Metrics and preprocessing     |
+| Transformers   | (Optional) Advanced embeddings |
+
+---
+
+## 📁 Directory Structure
 
 ```bash
 .
 ├── train.csv                 # Training metadata
 ├── test.csv                  # Test metadata
-├── sample_submission.csv     # Sample submission format
-├── submission.csv            # Model output
-├── validation_scatter.png    # Visualization of predictions
-├── requirements.txt          # Python dependencies
-├── models/                   # (Optional) Trained models
-├── audio/                    # (Optional) Audio files
-└── main.ipynb or train.py    # Main model script
-```
-
----
-
-## 📌 How to Use
-
-1. Add your `.wav` or `.mp3` audio files (if not using existing metadata).
-2. Run the feature extraction and model training code.
-3. Evaluate performance using scatter plots or regression metrics.
-4. Generate `submission.csv` for prediction output.
-
----
-
-## ✅ Example Output Format
-
-```
-file_name,grammar_score
-audio_001.wav,3.64
-audio_002.wav,3.64
-audio_003.wav,3.64
-...
-```
-
----
-
-## ⚙️ Future Improvements
-
-- 🔊 Support real-time speech evaluation
-- 🤖 Use transformer-based embeddings (like Wav2Vec or HuBERT)
-- 📉 Address prediction bias shown in current outputs
-- 🖼️ Interactive dashboards for visualization
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Whether it's improving model performance, cleaning up the codebase, or enhancing visualizations — feel free to open an issue or PR.
-
----
-
-## 🧠 Authors
-
-Made with ❤️ by [Your Name](https://github.com/your-username)
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-⭐ **If you like this project, consider starring it on GitHub!**
-```
-
----
-
-
+├── sample_submission.csv     # Format for submission
+├── submission.csv            # Your model's output
+├── validation_scatter.png    # Prediction vs actual plot
+├── requirements.txt          # Project dependencies
+├── models/                   # (Optional) Saved models
+├── audio/                    # (Optional) Audio data
+└── main.ipynb or train.py    # Main training script
