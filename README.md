@@ -1,6 +1,3 @@
-Awesome! Based on the image you uploaded (`validation_scatter.png`) and the context from the code files (`train.csv`, `test.csv`, etc.), it looks like you’re working on a **machine learning model to predict grammar scores from audio data**, and you're visualizing how well your predictions match the actual values.
-
-Here’s a polished and compelling `README.md` tailored to your current project setup:
 
 ---
 
@@ -122,4 +119,4 @@ This project is licensed under the MIT License.
 
 ---
 
-Would you like me to generate a logo/banner or create a badge section to include GitHub actions, Python version, or license info?
+
