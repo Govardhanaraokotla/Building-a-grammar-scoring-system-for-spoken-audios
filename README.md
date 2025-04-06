@@ -51,77 +51,83 @@ A Machine Learning project to **predict grammar scores** from spoken English aud
 ├── models/                   # (Optional) Saved models
 ├── audio/                    # (Optional) Audio data
 └── main.ipynb or train.py    # Main training script
+```
 
+---
 
+## ⚙️ Getting Started
 
-⚙️ Getting Started
-1. Clone the Repository
-bash
-Copy
-Edit
+### 1. Clone the Repository
+```bash
 git clone https://github.com/your-username/grammar-score-predictor.git
 cd grammar-score-predictor
-2. Install Dependencies
+```
+
+### 2. Install Dependencies
 We recommend using a virtual environment.
 
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
-📌 How to Use
-Place your audio files in the audio/ folder (if using raw audio).
+```
 
-Update the CSV files as needed (train.csv, test.csv).
+---
 
-Run the model training or inference script:
+## 📌 How to Use
 
-bash
-Copy
-Edit
-python train.py
-View the results in submission.csv and validation_scatter.png.
+1. Place your audio files in the `audio/` folder (if using raw audio).
+2. Update the CSV files as needed (`train.csv`, `test.csv`).
+3. Run the model training or inference script:
+   ```bash
+   python train.py
+   ```
+4. View the results in `submission.csv` and `validation_scatter.png`.
 
-✅ Sample Output Format
-csv
-Copy
-Edit
+---
+
+## ✅ Sample Output Format
+
+```csv
 file_name,grammar_score
 audio_001.wav,3.64
 audio_002.wav,3.64
 audio_003.wav,3.64
 ...
-🚧 Future Improvements
-🔊 Real-time evaluation from microphone input
+```
 
-🤖 Use pretrained transformer models (e.g., Wav2Vec2, HuBERT)
+---
 
-🧪 Hyperparameter optimization
+## 🚧 Future Improvements
 
-📊 Interactive performance dashboard
+- 🔊 Real-time evaluation from microphone input
+- 🤖 Use pretrained transformer models (e.g., Wav2Vec2, HuBERT)
+- 🧪 Hyperparameter optimization
+- 📊 Interactive performance dashboard
 
-🤝 Contributing
-Contributions are welcome!
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
 To contribute:
 
-Fork the repository
+1. Fork the repository  
+2. Create a new branch: `git checkout -b feature/your-feature`  
+3. Commit your changes: `git commit -am 'Add feature'`  
+4. Push to the branch: `git push origin feature/your-feature`  
+5. Open a Pull Request  
 
-Create a new branch: git checkout -b feature/your-feature
+---
 
-Commit your changes: git commit -am 'Add feature'
+## 👤 Author
 
-Push to the branch: git push origin feature/your-feature
+Developed by [Your Name](https://github.com/your-username)
 
-Open a Pull Request
+---
 
-👤 Author
-Developed by Your Name
+## 📄 License
 
-📄 License
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
-⭐ If you found this helpful, please give it a star!
+---
 
-yaml
-Copy
-Edit
-
+⭐ **If you found this helpful, please give it a star!**
