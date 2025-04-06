@@ -31,15 +31,3 @@ A Machine Learning project to **predict grammar scores** from spoken audio using
 git clone https://github.com/your-username/grammar-score-predictor.git
 cd grammar-score-predictor
 
-2. Install Dependencies
-Make sure you have Python 3.7+ installed. Then run:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-📦 Dependencies include:
-
-Copy
-Edit
-numpy, pandas, matplotlib, scikit-learn, librosa, seaborn, torch, torchaudio, transformers, scipy, tq
