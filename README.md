@@ -120,7 +120,7 @@ To contribute:
 
 ## 👤 Author
 
-Developed by [Your Name](https://github.com/your-username)
+Developed by [Govardhanarao Kotla](https://github.com/Govardhanaraokotla)
 
 ---
 
